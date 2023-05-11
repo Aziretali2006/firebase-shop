@@ -1,0 +1,60 @@
+
+.products_page {
+  &_filter {
+    .select {
+      select {
+        width: 400px;
+        padding: 18px 5px;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 10px white;
+      }
+    }
+
+    .tags {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+
+      button {
+        padding: 17px 20px;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        cursor: pointer;
+
+        &.activeTag {
+          color: black;
+          background-color: white;
+        }
+      }
+    }
+
+    .hashTags {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      button {
+        padding: 10px 20px;
+        color: white;
+        background: none;
+        border-radius: 10px;
+        border: 1px solid white;
+        cursor: pointer;
+
+        &.activeTag {
+          color: black;
+          background-color: white;
+        }
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}

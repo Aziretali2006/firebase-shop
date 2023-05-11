@@ -4,9 +4,12 @@ import Logo from "./logo/Logo";
 import Divider from "./forms/divider/Divider";
 import { TextInput } from "./forms/textInput/TextInput";
 import AuthSubmit from "./forms/authSubmit/AuthSubmit";
+import AuthGoogle from "./forms/authGoogle/AuthGoogle";
 import Errors from "./forms/errors/Errors";
 import AuthNavigate from "./forms/authNavigate/AuthNavigate";
-import AuthGoogle from "./forms/authGoogle/AuthGoogle";
+import Loader from "./loader/Loader";
+import Check from "./check/CheckAuthentification";
+import Slider from "./slider/Slider";
 
 export const Components = {
   Container,
@@ -17,5 +20,8 @@ export const Components = {
   AuthSubmit,
   Errors,
   AuthNavigate,
-  AuthGoogle
+  AuthGoogle,
+  Check,
+  Loader,
+  Slider
 }

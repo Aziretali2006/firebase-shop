@@ -8,9 +8,11 @@ header {
     border-bottom: 1px solid rgb(205 , 203 , 203);
 
     h2 {
-      font-weight: 400;
-      cursor: pointer;
-      color: white;
+      a {
+        font-weight: 400;
+        cursor: pointer;
+        color: white;
+      }
     }
 
     div {
@@ -20,7 +22,7 @@ header {
       ul {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
         li {
           position: relative;
           a {
@@ -31,7 +33,7 @@ header {
             color: white;
             opacity: .7;
             svg {
-              font-size: 20px;
+              font-size: 23px;
             }
             &:hover {
               opacity: 1;
