@@ -4,7 +4,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(0,0,0,0.8);
+  background-color: rgb(0,0,0,.9);
 }
 
 ul {
@@ -19,4 +19,17 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
+}
+
+.admin_layout {
+  display: flex;
+}
+
+.admin_layout aside {
+  width: 25%;
+  height: 100vh;
+}
+
+.admin_layout main {
+  width: 73%; 
 }

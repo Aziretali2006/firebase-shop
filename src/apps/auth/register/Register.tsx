@@ -23,6 +23,7 @@ const Register = () => {
   const handleRegister = (data: any) => {
     createUserWithEmailAndPassword(auth , data.email , data.password)
       .then((res: any) => {
+        console.log(data)
         localStorage.setItem("accessToken" , res.user.accessToken);
         actions.goToLogin();
         reset();

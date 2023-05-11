@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
-import Routes from './routes/Routes';
+import Screen from './screen/Screen';
 
-export const App: React.FunctionComponent = () => <Routes />
+export const App: React.FunctionComponent = () => <Screen />
+

@@ -1,0 +1,43 @@
+
+.screen_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  &_card {
+    width: 400px;
+    height: 250px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &_btn {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      button {
+        width: 140px;
+        padding: 10px 0;
+        border: 0;
+        background-color: rgba(32,11,136);
+        color: white;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(32,11,136);
+      }
+    }
+
+
+  }
+
+}

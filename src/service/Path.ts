@@ -1,7 +1,8 @@
 
 const mainPath = {
   layout: "/*",
-  auth: "accounts/*"
+  auth: "accounts/*",
+  admin: "/admin/*"
 };
 
 const AuthPath = {
@@ -9,13 +10,26 @@ const AuthPath = {
   login: "/login"
 }
 
+const AdminPath = {
+  admin: "/admin",
+  profile: "/admin/profile",
+  contacts: "/admin/contacts",
+  products: "/admin/products",
+  categories: "/admin/categories",
+  slider: "/admin/slider"
+}
+
 const connectedAuthPath = {
   register: "/accounts/signup",
-  login: "/accounts/login"
+  login: "/accounts/login",
+  layout: "/",
+  profile: "/profile",
+  products: "/products"
 }
 
 export const PATH = {
   mainPath,
   AuthPath,
-  connectedAuthPath
+  connectedAuthPath,
+  AdminPath
 }

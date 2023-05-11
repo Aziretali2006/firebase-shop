@@ -10,12 +10,12 @@ interface INavigate {
 const AuthNavigate: React.FunctionComponent<INavigate> = ({location}) => {
   return (
     <Link style={{color: "white"}} to={
-      location === "singIn"
+      location === "signIn"
         ? PATH.connectedAuthPath.register
         : PATH.connectedAuthPath.login
     }>
       {
-        location === "singIn"
+        location === "signIn"
           ? "If you don't have an account?"
           : "Already have an account?"
       }

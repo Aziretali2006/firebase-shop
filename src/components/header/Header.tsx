@@ -1,12 +1,14 @@
 
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Components } from '..';
+import { Providers } from '../../providers';
 import { List } from '../../utils/List';
 
 import cls from "./index.module.scss";
 
 const Header: React.FunctionComponent = () => {
+  const { user , token } = Providers.useAuth();
 
   const handleSearch = (e : any) => {
     if(e.key === "Enter") {
@@ -22,26 +24,14 @@ const Header: React.FunctionComponent = () => {
             <Components.Logo />
 
             <div>
-              <ul>
-                {
-                  List.headerTopIcons.map(item => (
-                    <li key={item.id} className={item.id === 3 ? cls.stick : ""}>
-                      <NavLink className={({isActive}) => isActive ? cls.activeLink : ""} to={item.route || ""}>
-                        {item.icon && <item.icon />}
-                        {item.caption}
-                      </NavLink>
-                    </li>
-                  ))
-                }
-              </ul>
-              <Components.Avatar />
+              <Components.Check />
             </div>
           </section>
           <section className={cls.header_bottom}>
             <ul>
               {List.headerBottomElements.map(item => (
                 <li key={item.id}>
-                  <Link to={""}>
+                  <Link to={item.route || ""}>
                     {item.caption}
                   </Link>
                 </li>
